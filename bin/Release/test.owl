@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:Mateusz_Witkowski_115429_Ontologia#"
+     xml:base="urn:absolute:Mateusz_Witkowski_115429_Ontologia"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Mateusz_Witkowski_115429_Ontologia="urn:absolute:Mateusz_Witkowski_115429_Ontologia#">
+    <owl:Ontology rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#naucza -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#naucza">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#naucza"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#naucza"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Przedmiot"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#uczy_sie -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#uczy_sie">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#uczy_sie"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#uczy_sie"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Przedmiot"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Id_nauczyciela -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Id_nauczyciela">
+        <rdfs:domain rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Id_ucznia -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Id_ucznia">
+        <rdfs:domain rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Imię -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Imię">
+        <rdfs:domain rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Osoba"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nazwisko -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nazwisko">
+        <rdfs:domain rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Osoba"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Historia -->
+
+    <owl:Class rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Historia">
+        <rdfs:subClassOf rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Przedmiot"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Język_polski -->
+
+    <owl:Class rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Język_polski">
+        <rdfs:subClassOf rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Przedmiot"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Matematyka -->
+
+    <owl:Class rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Matematyka">
+        <rdfs:subClassOf rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Przedmiot"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Muzyka -->
+
+    <owl:Class rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Muzyka">
+        <rdfs:subClassOf rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Przedmiot"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel -->
+
+    <owl:Class rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel">
+        <rdfs:subClassOf rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Osoba"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Osoba -->
+
+    <owl:Class rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Osoba"/>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Przedmiot -->
+
+    <owl:Class rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Przedmiot"/>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń -->
+
+    <owl:Class rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń">
+        <rdfs:subClassOf rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Osoba"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_historia -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_historia">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Historia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_język_polski -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_język_polski">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Język_polski"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_matematyka -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_matematyka">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Matematyka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_muzyka -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_muzyka">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Muzyka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs2_historia -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs2_historia">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Historia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs2_język_polski -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs2_język_polski">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Język_polski"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel1 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel1">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel"/>
+        <naucza rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_historia"/>
+        <naucza rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs2_historia"/>
+        <Id_nauczyciela rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</Id_nauczyciela>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jan</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kowalski</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel2 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel2">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel"/>
+        <naucza rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_język_polski"/>
+        <naucza rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs2_język_polski"/>
+        <Id_nauczyciela rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Id_nauczyciela>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paweł</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nowak</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel3 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel3">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel"/>
+        <naucza rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_muzyka"/>
+        <Id_nauczyciela rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Id_nauczyciela>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marek</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wiśniewski</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel4 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel4">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel"/>
+        <naucza rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_matematyka"/>
+        <Id_nauczyciela rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Id_nauczyciela>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elżbieta</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Małolepsza</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń1 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń1">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_historia"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_język_polski"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_matematyka"/>
+        <Id_ucznia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</Id_ucznia>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agnieszka</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ratuszna</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń2 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń2">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_historia"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_matematyka"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_muzyka"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs2_język_polski"/>
+        <Id_ucznia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Id_ucznia>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Władysław</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bogdański</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń3 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń3">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_matematyka"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs2_język_polski"/>
+        <Id_ucznia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Id_ucznia>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jarosław</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morawiak</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń4 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń4">
+        <rdf:type rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_historia"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_język_polski"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_matematyka"/>
+        <uczy_sie rdf:resource="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Kurs1_muzyka"/>
+        <Id_ucznia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Id_ucznia>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iwona</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zachciał</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Historia"/>
+            <rdf:Description rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Język_polski"/>
+            <rdf:Description rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Matematyka"/>
+            <rdf:Description rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Muzyka"/>
+            <rdf:Description rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Nauczyciel"/>
+            <rdf:Description rdf:about="urn:absolute:Mateusz_Witkowski_115429_Ontologia#Uczeń"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

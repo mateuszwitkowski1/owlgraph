@@ -1,0 +1,5 @@
+C:\Users\mateusz\Desktop\owldotnetapi-master\owldotnetapi-master\source\OwlDotNetApiTest\bin\Release\OwlDotNetApiTest.exe
+C:\Users\mateusz\Desktop\owldotnetapi-master\owldotnetapi-master\source\OwlDotNetApiTest\bin\Release\OwlDotNetApi.dll
+C:\Users\mateusz\Desktop\owldotnetapi-master\owldotnetapi-master\source\OwlDotNetApiTest\bin\Release\OwlDotNetApi.pdb
+C:\Users\mateusz\Desktop\owldotnetapi-master\owldotnetapi-master\source\OwlDotNetApiTest\obj\Release\OwlDotNetApiTest.csprojResolveAssemblyReference.cache
+C:\Users\mateusz\Desktop\owldotnetapi-master\owldotnetapi-master\source\OwlDotNetApiTest\obj\Release\OwlDotNetApiTest.exe

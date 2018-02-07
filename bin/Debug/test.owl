@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:sample#"
+     xml:base="urn:absolute:sample"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sample="urn:absolute:sample#">
+    <owl:Ontology rdf:about="urn:absolute:sample"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:sample#naucza -->
+	
+	<!--
+    <owl:ObjectProperty rdf:about="urn:absolute:sample#naucza">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:sample#naucza"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:sample#Nauczyciel"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:sample#naucza"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:sample#Przedmiot"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+	-->
+
+
+    <!-- urn:absolute:sample#uczy_sie -->
+	<!--
+    <owl:ObjectProperty rdf:about="urn:absolute:sample#uczy_sie">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:sample#uczy_sie"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:sample#Uczeń"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:absolute:sample#uczy_sie"/>
+                <owl:someValuesFrom rdf:resource="urn:absolute:sample#Przedmiot"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    -->
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:sample#Id_nauczyciela -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:sample#Id_nauczyciela">
+        <rdfs:domain rdf:resource="urn:absolute:sample#Nauczyciel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:sample#Id_ucznia -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:sample#Id_ucznia">
+        <rdfs:domain rdf:resource="urn:absolute:sample#Uczeń"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:sample#Imię -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:sample#Imię">
+        <rdfs:domain rdf:resource="urn:absolute:sample#Osoba"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:sample#Nazwisko -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:sample#Nazwisko">
+        <rdfs:domain rdf:resource="urn:absolute:sample#Osoba"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:sample#Historia -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Historia">
+        <rdfs:type rdf:resource="urn:absolute:sample#Przedmiot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Język_polski -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Język_polski">
+        <rdfs:type rdf:resource="urn:absolute:sample#Przedmiot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Matematyka -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Matematyka">
+        <rdfs:type rdf:resource="urn:absolute:sample#Przedmiot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Muzyka -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Muzyka">
+        <rdfs:type rdf:resource="urn:absolute:sample#Przedmiot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Nauczyciel -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Nauczyciel">
+        <rdfs:type rdf:resource="urn:absolute:sample#Osoba"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Osoba -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Osoba"/>
+    
+
+
+    <!-- urn:absolute:sample#Przedmiot -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Przedmiot"/>
+    
+
+
+    <!-- urn:absolute:sample#Uczeń -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Uczeń">
+        <rdfs:type rdf:resource="urn:absolute:sample#Osoba"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:sample#Kurs1_historia -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Kurs1_historia">
+        <rdf:type rdf:resource="urn:absolute:sample#Historia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Kurs1_język_polski -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Kurs1_język_polski">
+        <rdf:type rdf:resource="urn:absolute:sample#Język_polski"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Kurs1_matematyka -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Kurs1_matematyka">
+        <rdf:type rdf:resource="urn:absolute:sample#Matematyka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Kurs1_muzyka -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Kurs1_muzyka">
+        <rdf:type rdf:resource="urn:absolute:sample#Muzyka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Kurs2_historia -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Kurs2_historia">
+        <rdf:type rdf:resource="urn:absolute:sample#Historia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Kurs2_język_polski -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Kurs2_język_polski">
+        <rdf:type rdf:resource="urn:absolute:sample#Język_polski"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Nauczyciel1 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Nauczyciel1">
+        <rdf:type rdf:resource="urn:absolute:sample#Nauczyciel"/>
+        <naucza rdf:resource="urn:absolute:sample#Kurs1_historia"/>
+        <naucza rdf:resource="urn:absolute:sample#Kurs2_historia"/>
+        <Id_nauczyciela rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</Id_nauczyciela>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jan</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kowalski</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Nauczyciel2 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Nauczyciel2">
+        <rdf:type rdf:resource="urn:absolute:sample#Nauczyciel"/>
+        <naucza rdf:resource="urn:absolute:sample#Kurs1_język_polski"/>
+        <naucza rdf:resource="urn:absolute:sample#Kurs2_język_polski"/>
+        <Id_nauczyciela rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Id_nauczyciela>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paweł</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nowak</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Nauczyciel3 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Nauczyciel3">
+        <rdf:type rdf:resource="urn:absolute:sample#Nauczyciel"/>
+        <naucza rdf:resource="urn:absolute:sample#Kurs1_muzyka"/>
+        <Id_nauczyciela rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Id_nauczyciela>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marek</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wiśniewski</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Nauczyciel4 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Nauczyciel4">
+        <rdf:type rdf:resource="urn:absolute:sample#Nauczyciel"/>
+        <naucza rdf:resource="urn:absolute:sample#Kurs1_matematyka"/>
+        <Id_nauczyciela rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Id_nauczyciela>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elżbieta</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Małolepsza</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Uczeń1 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Uczeń1">
+        <rdf:type rdf:resource="urn:absolute:sample#Uczeń"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_historia"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_język_polski"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_matematyka"/>
+        <Id_ucznia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</Id_ucznia>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agnieszka</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ratuszna</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Uczeń2 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Uczeń2">
+        <rdf:type rdf:resource="urn:absolute:sample#Uczeń"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_historia"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_matematyka"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_muzyka"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs2_język_polski"/>
+        <Id_ucznia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Id_ucznia>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Władysław</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bogdański</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Uczeń3 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Uczeń3">
+        <rdf:type rdf:resource="urn:absolute:sample#Uczeń"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_matematyka"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs2_język_polski"/>
+        <Id_ucznia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Id_ucznia>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jarosław</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morawiak</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:sample#Uczeń4 -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:sample#Uczeń4">
+        <rdf:type rdf:resource="urn:absolute:sample#Uczeń"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_historia"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_język_polski"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_matematyka"/>
+        <uczy_sie rdf:resource="urn:absolute:sample#Kurs1_muzyka"/>
+        <Id_ucznia rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Id_ucznia>
+        <Imię rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iwona</Imię>
+        <Nazwisko rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zachciał</Nazwisko>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
